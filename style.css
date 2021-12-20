@@ -1,3 +1,7 @@
+html{
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -6,5 +10,108 @@
 
 a{
     text-decoration: none;
+    color: inherit;
 }
 
+
+/* HEADER */
+header{
+    max-width: 100%;
+    min-height: 503px;
+    background-image: url('img/jumbo.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.container{
+    max-width: 70%;
+    min-height: 503px;
+    margin: auto;
+}
+
+nav{
+    padding-top: 16px;
+}
+
+nav img, ul{
+    float: left;
+}
+
+nav ul{
+    padding: 7px 0 0 165px;
+}
+
+nav button{
+    float: right;
+    background-color: white;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+nav ul li{
+    float: left;
+    padding-right: 35px;
+    list-style: none;
+    color: white;
+    font-size: 14px;
+}
+
+nav.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container .text-container{
+    width: 70%;
+    margin: auto;
+    padding-top: 80px;
+    text-align: center;
+    color: white;
+}
+
+.container .text-container h1{
+    font-size: 50px;
+    padding-bottom: 40px;
+}
+
+.container .text-container p{
+    width: 90%;
+    margin: auto;
+    line-height: 1.5;
+    padding-bottom: 40px;
+}
+
+.header-links > a{
+    padding: 12px 20px;
+    border-radius: 50px;
+} 
+
+.header-links a:first-child{
+    color: black;
+    background-color: white;
+    margin-right: 25px;
+}
+
+.header-links a:last-child{
+    background-color: black;
+}
+
+a > strong{
+    font-size: 20px;
+    font-family: 'Roboto';
+    vertical-align: middle;
+} /* PERCHè DEVO FARE COSì ALTRIMENTI NON MI PRENDE IL BOLD??????*/
+
+
+/* DEBUG */
+
+.container.debug{
+    border: 2px solid yellowgreen;
+}
+
+nav.debug{
+    border: 1px solid black;
+}
