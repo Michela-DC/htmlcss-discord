@@ -122,20 +122,32 @@ a > strong{
     margin: auto;
 }
 
-.img-left{
-    float: left;
+.section-container > img{
     width: 70%;
     padding-top: 90px;
+}
+
+.img-left{
+    float: left;
     padding-right: 120px;
 }
 
-.text-right{
-    float: left;
+.img-right{
+    float: right;
+    padding-left: 120px;
+}
+
+.section_text-container{
     width: 28%;
     padding-top: 115px;
 }
 
-.text-right> h1{
+
+.section_text-container{
+    float: left;
+}
+
+.section_text-container > h1{
     font-size: 40px;
     padding-bottom: 20px;
 }
