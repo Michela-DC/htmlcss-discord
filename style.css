@@ -13,6 +13,10 @@ a{
     color: inherit;
 }
 
+p{
+    line-height: 1.5;
+}
+
 
 /* HEADER */
 header{
@@ -23,7 +27,7 @@ header{
     background-size: cover;
 }
 
-.container{
+.header-container{
     max-width: 70%;
     min-height: 503px;
     margin: auto;
@@ -64,7 +68,7 @@ nav.clearfix::after{
     clear: both;
 }
 
-.container .text-container{
+.header-container .header_text-container{
     width: 70%;
     margin: auto;
     padding-top: 80px;
@@ -72,15 +76,14 @@ nav.clearfix::after{
     color: white;
 }
 
-.container .text-container h1{
-    font-size: 50px;
+.header-container .header_text-container h1{
     padding-bottom: 40px;
+    font-size: 50px;
 }
 
-.container .text-container p{
+.header-container .header_text-container p{
     width: 90%;
     margin: auto;
-    line-height: 1.5;
     padding-bottom: 40px;
 }
 
@@ -106,9 +109,44 @@ a > strong{
 } /* PERCHè DEVO FARE COSì ALTRIMENTI NON MI PRENDE IL BOLD??????*/
 
 
+/* MAIN */
+
+.section{
+    max-width: 100%;
+    min-height: 609px;
+}
+
+.section-container{
+    max-width: 70%;
+    min-height: 609px;
+    margin: auto;
+}
+
+.img-left{
+    float: left;
+    width: 70%;
+    padding-top: 90px;
+    padding-right: 120px;
+}
+
+.text-right{
+    float: left;
+    width: 28%;
+    padding-top: 115px;
+}
+
+.text-right> h1{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+
+
+
+
 /* DEBUG */
 
-.container.debug{
+.header-container, .section-container{
     border: 2px solid yellowgreen;
 }
 
