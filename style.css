@@ -123,10 +123,32 @@ a > strong{
     font-size: 20px;
     font-family: 'Roboto';
     vertical-align: middle;
-} /* PERCHè DEVO FARE COSì ALTRIMENTI NON MI PRENDE IL BOLD??????*/
+} 
 
 
 /* MAIN ------------------------------ */
+
+.section{
+    position: relative;
+}
+
+.section .wave-top{
+    position: absolute;
+    bottom: 100%;
+}
+
+.section .wave-bottom{
+    position: absolute;
+    top: 100%;
+    transform: rotate(180deg);
+}
+
+.section svg[class^="wave"]{
+    width: 100%;
+    left: 0;
+    height: 65px;
+    color: #F8F8F8;
+}
 
 .section-container{
     max-width: 70%;
@@ -208,13 +230,13 @@ a > strong{
     background-color: #F8F8F8;
 }
 
-.section:nth-child(1)::after, .section:nth-child(3)::after{
+/* .section:nth-child(1)::after, .section:nth-child(3)::after{
     content: url('img/wave.svg');
     background-image: url('img/wave.svg');
     opacity: 0.03;
     height: 50px;
     width: 100%;
-}
+} */
 
 
 /* FOOTER ------------------------------*/
@@ -298,3 +320,16 @@ footer{
 .footer-row_2 > a:hover{
     border: 1px solid #806FE1;
 }
+/* .section:nth-child(2)::before, .section:nth-child(4)::before{
+    background-image: url('img/wave.svg');
+    opacity: 0.03;
+    height: 50px;
+    width: 100%;
+} */
+
+/* .section:nth-child(1)::after, .section:nth-child(3)::after{
+    content: url('img/wave.svg');
+    opacity: 0.03;
+    height: 50px;
+    width: 100%;
+} */
